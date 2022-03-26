@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+:root {
+  --color-blue: #050a30;
+  --color-white: #ffffff;
+}
+
+html,
+body {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Home Page CSS*/
+.App {
+  min-height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
