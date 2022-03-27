@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Button, FormControl, FormLabel, InputGroup, Input, InputRightElement, VStack } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 const Login = () => {
 
@@ -35,7 +37,7 @@ const Login = () => {
                     />
                     <InputRightElement width="4.5rem">
                         <Button h="1.75rem" size="sm" onClick={() => setShowPass(!showPass)}>
-                            {showPass ? "Hide" : "Show"}
+                            <FontAwesomeIcon icon={showPass ? faEyeSlash : faEye} />
                         </Button>
                     </InputRightElement>
                 </InputGroup>
